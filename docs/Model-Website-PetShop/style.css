@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #ee909d;
+  background: #e49ca6;
   color: #fff;
 }
 
@@ -85,13 +85,14 @@ header {
 }
 
 .home-content h1 span {
-  color: #6d420a;
+  color: #4d2e07;
 }
 
 .home-content h3 {
   font-size: 28px;
   font-weight: 500;
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .btn {
