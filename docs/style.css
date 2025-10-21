@@ -133,7 +133,9 @@ header {
 
 .services-container {
   display: flex;
+  text-align: center;
   justify-content: center;
+  color: #ebebeb;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -445,5 +447,6 @@ footer {
     gap: 5px;
   }
 }
+
 
 
