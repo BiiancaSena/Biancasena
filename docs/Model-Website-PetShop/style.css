@@ -1,4 +1,3 @@
-
 /* ===== Reset e Base ===== */
 * {
   margin: 0;
@@ -93,6 +92,21 @@ header {
   font-weight: 500;
   margin: 10px 0;
   color: #ffffff;
+}
+
+.bt {
+  background: #6d420a;
+  color: #f0f0f0;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+  margin-top: 15px;
+}
+
+.bt:hover {
+  background: #472902;
 }
 
 .btn {
@@ -834,3 +848,4 @@ footer {
     display: none;
   }
 }
+
