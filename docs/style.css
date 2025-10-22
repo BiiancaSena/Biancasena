@@ -80,17 +80,6 @@ header {
   color: #c5c6c7;
 }
 
-.bt {
-  background: #6d420a;
-  color: #f0f0f0;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: .3s;
-  margin-top: 15px;
-}
-
 .btn {
   background: #c41a0e;
   color: #f0f0f0;
@@ -458,6 +447,7 @@ footer {
     gap: 5px;
   }
 }
+
 
 
 
