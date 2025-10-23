@@ -1,182 +1,382 @@
-/* ===== Reset e Base ===== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #e49ca6;
-    color: #4d2e07;
-}
-
-
-/* ===== Header ===== */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #e07886;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.logo span {
-    color: #6d420a;
-}
-
-.log {
-    width: 35px;
-    height: 35px;
-}
-
-
-/* ===== Agendamento Section ===== */
-
-.agendamento {
-    padding: 130px 20px 80px;
-    text-align: center;
-    min-height: 100vh;
-    background: #e49ca6;
-}
-
-.agendamento h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #6d420a;
-    margin-bottom: 40px;
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.agendamento-img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid #6d420a;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/* ===== Formulário ===== */
-
-.agendamento-form {
-    background: #fcdde3;
-    border-radius: 25px;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px 25px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.agendamento-form input,
-.agendamento-form textarea {
-    width: 100%;
-    border: 3px solid #6d420a;
-    border-radius: 20px;
-    padding: 14px 18px;
-    font-size: 16px;
-    background: #ffe6eb;
-    color: #4d2e07;
-    outline: none;
-    transition: all 0.2s ease;
-}
-
-.agendamento-form input:focus,
-.agendamento-form textarea:focus {
-    box-shadow: 0 0 0 3px rgba(109, 66, 10, 0.3);
-    transform: scale(1.01);
-}
-
-.agendamento-form button {
-    background: #6d420a;
-    color: #fff;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 14px 0;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.agendamento-form button:hover {
-    background: #472902;
-    transform: translateY(-3px);
-}
-
-
-/* ===== Footer ===== */
-
-footer {
-    background: #e07886;
-    text-align: center;
-    padding: 15px;
-    color: #fff;
-    font-size: 14px;
-}
-
-
-/* ===== Responsividade ===== */
-
-@media (max-width: 768px) {
+    /* ===== Reset e Base ===== */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background: #e49ca6;
+        color: #fff;
+    }
+    /* ===== Header (barra fixa) ===== */
+    
     header {
-        padding: 12px 20px;
+        position: fixed;
+        top: 0;
+        height: 60px;
+        width: 100%;
+        background: #e07886;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 80px;
+        z-index: 1000;
+        gap: 80px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
+    /* ===== Logo ===== */
+    
     .logo {
-        font-size: 22px;
+        font-size: 28px;
+        font-weight: 700;
     }
-    .agendamento h2 {
-        font-size: 30px;
+    
+    .logo span {
+        color: #6d420a;
     }
-    .agendamento-img {
-        width: 180px;
-        height: 180px;
+    
+    .log {
+        width: 35px;
+        height: 35px;
+        margin-left: -238px;
+        margin-top: -5px;
     }
-    .agendamento-form {
-        padding: 25px 20px;
+    /* Home Section */
+    
+    .home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 80px;
+        padding-top: 60px;
+        color: #6d420a;
     }
-}
-
-@media (max-width: 480px) {
-    .agendamento {
-        padding: 110px 15px 60px;
+    
+    .home-content {
+        max-width: 50%;
     }
-    .agendamento h2 {
-        font-size: 26px;
+    
+    .home-content h1 {
+        font-size: 56px;
+        margin-top: -250px;
     }
-    .agendamento-form {
-        max-width: 95%;
-        padding: 20px 15px;
+    
+    .home-content h1 span {
+        color: #4d2e07;
     }
-    .agendamento-form input,
-    .agendamento-form textarea {
+    
+    .home-content h3 {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 10px 0;
+        color: #ffffff;
+    }
+    
+    .btn {
+        background: #6d420a;
+        color: #f0f0f0;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: .3s;
+        margin-top: 15px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .btn:hover {
+        background: #472902;
+    }
+    /* ===== Mancha lateral (Blob) ===== */
+    
+    .blob {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 520px;
+        height: 520px;
+        background: #6d420a;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+    
+    .blob img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    }
+    /* Agendamento (Formulário) */
+    
+    .agend {
+        .container {
+            margin: 20px 0 80px 75px;
+            max-width: 500px;
+            margin-top: -410px;
+        }
+    }
+    
+    input::placeholder {
+        color: #472902;
+    }
+    /* Campos de formulário */
+    
+    .agend input[type="text"],
+    .agend input[type="time"],
+    .agend input[type="date"],
+    .agend textarea {
+        width: 500px;
+        padding: 10px;
+        background-color: #fddee7;
+        border: 3px saddlebrown solid;
+        border-radius: 20px;
         font-size: 15px;
+        margin-bottom: 10px;
+        color: #472902;
     }
-    .agendamento-form button {
-        font-size: 16px;
-        padding: 12px 0;
+    
+    .agend input[type="text"],
+    .agend input[type="time"],
+    .agend input[type="date"] {
+        height: 50px;
     }
-}
+    
+    .agend input[type="text"]:focus,
+    .agend input[type="time"]:focus,
+    .agend input[type="date"]:focus,
+    .agend textarea:focus {
+        border-color: #472902;
+        box-shadow: 0 0 5px rgba(189, 85, 0, 0.5);
+        outline: none;
+    }
+    
+    .agend textarea {
+        height: 85px;
+        border-color: saddlebrown;
+    }
+    
+    .agend .btn {
+        margin-top: 5px;
+        width: 500px;
+        height: 50px;
+        color: #ececec;
+        background-color: #6d420a;
+    }
+    /* ===== Footer ===== */
+    
+    footer {
+        background: #e07886;
+        text-align: center;
+        padding: 20px;
+        color: #0c0c0c;
+        font-size: 14px;
+    }
+    /* ===== RESPONSIVIDADE ===== */
+    /* --- Tablet (max-width: 1024px) --- */
+    
+    @media (max-width: 1024px) {
+        header {
+            padding: 15px 40px;
+            gap: 30px;
+        }
+        .log {
+            display: none;
+        }
+        .logo {
+            margin-right: 50px;
+        }
+        .home {
+            padding: 0 40px;
+            padding-top: 60px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: auto;
+        }
+        .home-content {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+        .home-content h1 {
+            font-size: 48px;
+            margin-top: 450px;
+        }
+        .home-content h3 {
+            font-size: 24px;
+        }
+        .blob {
+            position: relative;
+            top: auto;
+            transform: none;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto 30px;
+            margin-top: -520px;
+        }
+        .agend {
+            margin: 30px auto;
+            padding: 0 40px;
+            max-width: 100%;
+            margin-top: 120px;
+        }
+        .agend input[type="text"],
+        .agend input[type="time"],
+        .agend input[type="date"],
+        .agend textarea,
+        .agend .btn {
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+    /* --- Mobile (max-width: 767px) --- */
+    
+    @media (max-width: 767px) {
+        header {
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+        .log {
+            display: none;
+        }
+        .logo {
+            font-size: 24px;
+            margin-left: 40px;
+        }
+        .home-content h1 {
+            font-size: 36px;
+            margin-top: 160px;
+        }
+        .home-content h3 {
+            font-size: 18px;
+        }
+        .home {
+            padding: 0 20px;
+            padding-top: 60px;
+            margin-top: 170px;
+        }
+        .blob {
+            width: 300px;
+            height: 300px;
+            margin: 40px auto 30px;
+            margin-top: -400px;
+        }
+        .agend {
+            margin: 20px auto 40px;
+            padding: 0 20px;
+            margin-top: 90px;
+        }
+        .agend input[type="text"],
+        .agend input[type="time"],
+        .agend input[type="date"],
+        .agend textarea,
+        .agend .btn {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    @media (max-width: 895px) {
+        header {
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+        .log {
+            display: none;
+        }
+        .logo {
+            font-size: 24px;
+            margin-left: -10px;
+        }
+        .home-content h1 {
+            font-size: 36px;
+            margin-top: 290px;
+        }
+        .home-content h3 {
+            font-size: 18px;
+        }
+        .home {
+            padding: 0 20px;
+            padding-top: 60px;
+            margin-top: 10px;
+        }
+        .blob {
+            width: 300px;
+            height: 300px;
+            margin: 40px auto 30px;
+            margin-top: -440px;
+        }
+        .agend {
+            margin: 20px auto 40px;
+            padding: 0 20px;
+            margin-top: 100px;
+        }
+        .agend input[type="text"],
+        .agend input[type="time"],
+        .agend input[type="date"],
+        .agend textarea,
+        .agend .btn {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    @media (max-width: 915px) {
+        header {
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+        .log {
+            display: none;
+        }
+        .logo {
+            font-size: 24px;
+            margin-left: -10px;
+        }
+        .home-content h1 {
+            font-size: 36px;
+            margin-top: 350px;
+        }
+        .home-content h3 {
+            font-size: 18px;
+        }
+        .home {
+            padding: 0 20px;
+            padding-top: 60px;
+            margin-top: 10px;
+        }
+        .blob {
+            width: 300px;
+            height: 300px;
+            margin: 40px auto 30px;
+            margin-top: -440px;
+        }
+        .agend {
+            margin: 20px auto 40px;
+            padding: 0 20px;
+            margin-top: 130px;
+        }
+        .agend input[type="text"],
+        .agend input[type="time"],
+        .agend input[type="date"],
+        .agend textarea,
+        .agend .btn {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
