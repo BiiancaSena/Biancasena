@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento</title>
-    <link rel="stylesheet" href="agendamento.css" />
+    <title>Agendamento | PetShop</title>
+    <link rel="stylesheet" href="agendamento.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- ===== Header ===== -->
     <header>
-    <div class="logo">Pet<span>Shop</span></div>
-    <img src="paw (1).png" class="log">
-    <nav class="navbar">
-      </nav>
+        <div class="logo">Pet<span>Shop</span></div>
+        <img src="paw (1).png" class="log" alt="Ícone de pata">
     </header>
 
-    <!-- ===== Home Section ===== -->
-  <section id="home" class="home">
-    <div class="home-content">
-        <p><h1>Agendamento 🐾</h1></p><br>
-    <div class="blob">
-      <img src="CAT AND DOG.jpg">
-    </div>
-  </section>
+    <!-- ===== Agendamento Section ===== -->
+    <section class="agendamento">
+        <div class="img-container">
+            <img src="CAT AND DOG.jpg" alt="Cachorro e gato" class="agendamento-img">
+        </div>
 
-    <section id="agend" class="agend">
-    <div class="agend-content">
-  </div>
-    <p><input type="text" name="name" placeholder="Nome do Tutor(a)" required></p>
-    <p><input type="text" name="name" placeholder="Nome do Pet" required></p>
-    <p><input type="date" name="date" placeholder="FormData" required></p>
-    <p><input type="time" id="hora" name="Hora" required></p>
-    <p><textarea name="message" placeholder="Observação" rows="6" required></textarea></p>
-    <button onclick= "window.location.href='index.html'" type="submit" class="btn">Agendar</button>
-    </div>
-  </section>
+        <h2>Agendamento 🐾</h2>
 
-  <!-- ===== Footer ===== -->
-  <footer>
-    <p>© 2025 Bianca Sena.</h1></p>
-  </footer>
-  
+        <form class="agendamento-form" action="#" method="post">
+            <input type="text" name="tutor" placeholder="Nome do Tutor(a)" required>
+            <input type="text" name="pet" placeholder="Nome do Pet" required>
+            <input type="date" name="data" required>
+            <input type="time" name="hora" required>
+            <textarea name="observacao" placeholder="Observação (opcional)" rows="5"></textarea>
+            <button type="submit" onclick="window.location.href='index.html'">Agendar</button>
+        </form>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2025 Bianca Sena</p>
+    </footer>
 </body>
+
 </html>
